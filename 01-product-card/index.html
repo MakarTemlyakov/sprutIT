@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpurIT - Тестовое задание 1. HTML и CSS</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <main>
+        <section class="products">
+            <h1 class="title">ТОВАРЫ НЕДЕЛИ</h1>
+            <div class="container">
+                <ul class="product-cards">
+                    <li class="product-card">
+                        <div class="image-wrapper">
+                            <img class="product-card__img" src="/img/product-item.jpg" alt="Апельсин" />
+                            <div class="product-card__tags">
+                                <span class="tag tag_new product-card__tag">Новинка</span>
+                                <span class="tag tag_last product-card__tag">Последний</span>
+                            </div>
+                        </div>
+                        <div class="product-card__body">
+                            <h2 class="product-card__heading">Апельсиновый сок</h2>
+                            <p class="product-card__description">
+                                Он придётся по душе, даже если ты слива лиловая, спелая, садовая.
+                            </p>
+                        </div>
+                        <button class="button button_active product-card__button" type="button">В корзину</button>
+                    </li>
+                    <li class="product-card">
+                        <div class="image-wrapper">
+                            <img class="product-card__img" src="/img/product-item.jpg" alt="Апельсин" />
+                        </div>
+                        <div class="product-card__body">
+                            <h2 class="product-card__heading">Апельсиновый сок</h2>
+                            <p class="product-card__description">
+                                Он придётся по душе, даже если ты слива лиловая, спелая, садовая. Ну что сказать? Ну что
+                                сказать? Устроены так длинные описания.
+                            </p>
+                        </div>
+                        <button class="button button_active product-card__button" type="button">В
+                            корзину</button>
+                    </li>
+                    <li class="product-card">
+                        <div class="image-wrapper">
+                            <img class="product-card__img" src="/img/product-item.jpg" alt="Апельсин" />
+                        </div>
+                        <div class="product-card__body">
+                            <h2 class="product-card__heading">Апельсиновый сок</h2>
+                            <p class="product-card__description">
+                                Он придётся по душе, даже если ты слива лиловая, спелая, садовая.
+                            </p>
+                        </div>
+                        <button class="button button_disabled product-card__button_disabled"
+                            type="button">Закончилось</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

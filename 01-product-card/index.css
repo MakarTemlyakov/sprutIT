@@ -1,0 +1,170 @@
+/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  min-height: 100%;
+  margin: 0;
+}
+
+.products {
+  background-color: #e5e5e5;
+  padding-top: 1px;
+  padding-bottom: 60px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 1180px;
+  margin: auto;
+}
+
+.product-cards {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product-card {
+  width: 380px;
+  min-height: 482px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+  word-break: break-word;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.product-card:not(:last-child) {
+  margin-right: 20px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 213px;
+  box-sizing: border-box;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  outline: none;
+}
+
+.product-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 0;
+  top: 16px;
+}
+
+.product-card__tag {
+  padding: 2px 16px;
+  margin-left: 16px;
+  margin-bottom: 5px;
+}
+
+.image-wrapper {
+  width: 380px;
+  height: 213px;
+  position: relative;
+  min-height: 213px;
+}
+
+.product-card__body {
+  padding: 0 24px;
+  flex-grow: 1;
+}
+
+.product-card__heading {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.product-card__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.product-card__button_disabled {
+  margin: 24px 24px;
+  padding: 10px 0;
+}
+
+.product-card__button {
+  margin: 24px 24px;
+  padding: 10px 10px;
+}
+
+.button {
+  color: #42940f;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid #42940f;
+  border-radius: 8px;
+  background-color: transparent;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  min-width: 100px;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #42940f;
+  transition: 0.5s;
+  border: 2px solid #42940f;
+  cursor: pointer;
+}
+
+.button_active:active {
+  background-color: #1f5200;
+  color: #ffffff;
+  border: 2px solid #1f5200;
+}
+
+.button_disabled {
+  background-color: #4e4e4e;
+  color: #ffffff;
+  border: 1px solid #4e4e4e;
+  outline: none;
+}
+
+.button_disabled:hover {
+  background-color: #4e4e4e;
+  color: #ffffff;
+  border: 1px solid #4e4e4e;
+  cursor: not-allowed;
+}
+
+.tag {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2f2f2f;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
+.tag_new {
+  background-color: #fdcff3;
+}
+
+.tag_last {
+  background-color: #ffcf56;
+}
