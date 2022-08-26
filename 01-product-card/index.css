@@ -101,11 +101,6 @@ body {
   line-height: 24px;
 }
 
-.product-card__button_disabled {
-  margin: 24px 24px;
-  padding: 10px 0;
-}
-
 .product-card__button {
   margin: 24px 24px;
   padding: 10px 10px;
@@ -132,23 +127,18 @@ body {
   cursor: pointer;
 }
 
-.button_active:active {
+.button:active {
   background-color: #1f5200;
   color: #ffffff;
   border: 2px solid #1f5200;
 }
 
-.button_disabled {
+.button[disabled],
+.button:disabled {
   background-color: #4e4e4e;
   color: #ffffff;
   border: 1px solid #4e4e4e;
   outline: none;
-}
-
-.button_disabled:hover {
-  background-color: #4e4e4e;
-  color: #ffffff;
-  border: 1px solid #4e4e4e;
   cursor: not-allowed;
 }
 
